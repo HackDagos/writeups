@@ -67,7 +67,7 @@ import ast
 
 def lets_try(prime, shares):
 	chars = ""  # the possible chars that satisfy the conditions
-    # we brute force through all printable chars
+	# we brute force through all printable chars
 	for char in printable:
 		bc = ord(char)  # ASCII code of the char
         # we brute force through all possible 
@@ -86,7 +86,7 @@ def lets_try(prime, shares):
 					if shares[3] == sum(c * 4**j for j, c in enumerate(coeffs)) % prime:
 						if shares[4] == sum(c * 5**j for j, c in enumerate(coeffs)) % prime:
 							chars += char
-    # just in case there are more than one char that satisfy all conditions
+	# just in case there are more than one char that satisfy all conditions
 	if len(chars) > 1:
 		return f"[{chars}]"
 	return chars
