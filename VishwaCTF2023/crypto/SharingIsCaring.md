@@ -91,10 +91,11 @@ def lets_try(prime, shares):
 		return f"[{chars}]"
 	return chars
 
-# some boring python stuff
+# here we just read the encoded flag
+# and decrypt it 
 def print_flag():
 	flag = ""
-	with open("data.txt", "r") as f:
+	with open("output.txt", "r") as f:
 		for line in f.readlines():
 			content = line.strip()
 			prime_index = content.rfind(",")
