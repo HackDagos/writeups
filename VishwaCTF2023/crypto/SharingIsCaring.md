@@ -65,6 +65,8 @@ y = sum(coeffs) % prime
 from string import printable
 import ast
 
+# here is the main part
+# the decryption algorithm
 def lets_try(prime, shares):
 	chars = ""  # the possible chars that satisfy the conditions
 	# we brute force through all printable chars
