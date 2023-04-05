@@ -26,15 +26,15 @@ def main():
     binary_path = './solveme'
     project = angr.Project(binary_path, auto_load_libs=False, main_opts={'base_addr' : 0x00100000})
 
-    input_length = 34
+    input_length = 32
     flag_chars = [claripy.BVS(f'flag_{i}', 8) for i in range(input_length)]
-    flag = claripy.Concat(*flag_chars + [claripy.BVV(b'\x00')])  
+    flag = claripy.Concat(*flag_chars)  
 
     
     state = project.factory.entry_state(args=[binary_path, flag])
     for k in flag_chars:
-        state.solver.add(k >= 0x20)  
-        state.solver.add(k <= 0x7e)
+        state.solver.add(k >= 0x41)  
+        state.solver.add(k <= 0x5a)
 
     
     simgr = project.factory.simulation_manager(state)
@@ -42,13 +42,13 @@ def main():
     
     def correct(state):
         try:
-            return b'CORRECT :)' in state.posix.dumps(1)
+            return b'You win!' in state.posix.dumps(1)
         except:
             return False
 
     def wrong(state):
         try:
-            return b"INCORRECT :(" in state.posix.dumps(1)
+            return b"Sorry, try again." in state.posix.dumps(1)
         except:
             return False
 
@@ -59,13 +59,12 @@ def main():
     if simgr.found:
         found_state = simgr.found[0]
         solution = found_state.solver.eval(flag, cast_to=bytes).decode(errors='ignore')
-        return solution.rstrip('\x00')
+        return solution
     else:
         return "No solution found"
 
 if __name__ == '__main__':
     solution = main()
     print(f"Correct input string: {solution}")
-```
 
 flag: VishwaCTF{N3V3r_60NN4_61V3_Y0U_UP}
