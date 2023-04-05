@@ -14,6 +14,10 @@ Dude...They just emailed my own password back to me (and it wasn't even asterisk
 
 This challenge was a bit tricky because it was hard to find the right domain.
 
+I found a list of "sex offender" in **Tumblr** https://plaintextoffenders.com/offenders
+
+i got this GitHub link: https://github.com/plaintextoffenders/plaintextoffenders/blob/master/offenders.csv
+
 The flag was the last one from the list VishwaCTF: napcosecurity.com
 
 flag --> **VishwaCTF{napcosecurity.com}**
