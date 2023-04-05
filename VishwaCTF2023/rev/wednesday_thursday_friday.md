@@ -14,9 +14,9 @@ Turns out that it wants 34 characters in the first argument, it interprets them 
 
 It would be very time consuming to solve by hand, but luckily some automatic tools exist, such as angr.
 
-So i used angr in a python script to get the correct input to make the program execute successfully.
+So i used **angr** in a python script to get the correct input to make the program execute successfully.
 
-script used:
+To solve this challenge we used this script:
 ```python
 import angr
 import claripy
