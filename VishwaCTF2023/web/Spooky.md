@@ -11,6 +11,7 @@ The challenge show us a site, and the description report that a user forgot his 
 Firstly looking at the web interface there weren't clues about what to do. So to retrieve more information there were two possibilities:
 * Use dirb to see if there are some useful folders to retrieve information.
 * Use gospider in order to try to retrieve sitemap.xml or robots.txt
+<br>
 So trying the second way by executing the command:
 ```shell
 gospider -s https://ch39763117927.ch.eng.run/ --sitemap
@@ -38,7 +39,7 @@ for user in users:
 	if "Incorrect" not in res.text:  
 		break
 ```
-At this point we are logged as user shrekop, with password "VmU5gnXKYN2vLp48", but there's no flag on the page. After thinking about it, the first idea was insert an additional param ```admin='true'``` in the form in order maybe to become admin with the code lines:
+At this point we are logged in as user shrekop, with password "VmU5gnXKYN2vLp48", but there's no flag on the page. After thinking about it, the first idea was insert an additional param ```admin='true'``` in the form in order maybe to become admin with the code lines:
 ```Python
 res = requests.post("https://ch39763117927.ch.eng.run/login.php", data={"user": correct[0], "pass": correct[1], 'admin': 'true'})  
 print(res.text)
