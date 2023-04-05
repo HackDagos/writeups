@@ -10,10 +10,7 @@ The challenge show us a site, and the description report that a user forgot his 
 ## **Solution**
 Firstly looking at the web interface there weren't clues about what to do. So to retrieve more information there were two possibilities:
 * Use dirb to see if there are some useful folders to retrieve information.
-* Use gospider in order to try to retrieve sitemap.xml or robots.txt 
-
-<!-- end of the list -->
-
+* Use gospider in order to try to retrieve sitemap.xml or robots.txt <a>
 So trying the second way by executing the command:
 ```shell
 gospider -s https://ch39763117927.ch.eng.run/ --sitemap
