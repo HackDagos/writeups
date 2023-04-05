@@ -8,7 +8,7 @@
 The challenge show us a site, and the description report that a user forgot his login credentials. The scope of the challenge was to recover the forgotten credentials.
 
 ## **Solution**
-Firstly looking at the web interface there weren't clues about what to do. There aren't scripts inside the client page so XSS is excluded and the only way to interact is the form. So to retrieve more information there were two possibilities:
+Firstly looking at the web interface there weren't clues about what to do. So to retrieve more information there were two possibilities:
 * Use dirb to see if there are some useful folders to retrieve information.
 * Use gospider in order to try to retrieve sitemap.xml or robots.txt
 So trying the second way by executing the command:
