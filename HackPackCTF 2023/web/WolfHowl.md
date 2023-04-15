@@ -8,8 +8,7 @@
 ## Description
 
 > Log into WolfHowl website
->wolfhowl.cha.hackpack.club
-
+>[wolfhowl.cha.hackpack.club](https://wolfhowl.cha.hackpack.club)
 
 ## **Solution**
 
