@@ -7,7 +7,7 @@
 
 ## Description
 
-> Log into WolfHowl to get the flag
+> Log into WolfHowl website
 >wolfhowl.cha.hackpack.club
 
 
