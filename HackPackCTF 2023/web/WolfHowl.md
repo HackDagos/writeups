@@ -1,6 +1,6 @@
 # **Writeup - HackPackCTF**
 
-* Category **WEB** 
+* Category **web** 
 * Name **WolfHowl** 
 * Difficulty **Easy**
 
