@@ -17,5 +17,5 @@ Join the discord server using this link: https://discord.com/invite/yxc7dfQt
 
 You can see the flag in the **rules** channel.
 
-
+HackPackCTF 2023/misc/img/Welcome_rules.PNG
 
