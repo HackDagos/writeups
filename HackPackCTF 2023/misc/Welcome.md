@@ -18,3 +18,5 @@ Join the discord server using this link: https://discord.com/invite/yxc7dfQt
 You can see the flag in the **rules** channel.
 
 ![alt](img/Welcome_rules.png)
+
+flag: **flag{W3lc0m3_t0_H4ckP4ckCTF_2023}**
