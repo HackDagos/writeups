@@ -17,5 +17,4 @@ Join the discord server using this link: https://discord.com/invite/yxc7dfQt
 
 You can see the flag in the **rules** channel.
 
-img/Welcome_rules.jfif
-
+![alt](img/Welcome_rules.png)
