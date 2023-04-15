@@ -31,7 +31,7 @@ at this point, we do a basic injection and see what happens:
 
 `"OR 1=1 --"`
 
-ok by forcing the field to True the site responds to us with all the artists in the database at this point we have confirmation of a sql injection
+ok by forcing the field to True the site responds to us with all the artists in the database at this point we have confirmation of a SQL injection
 
 ![site](img/WolfHowl_or.png)
 
