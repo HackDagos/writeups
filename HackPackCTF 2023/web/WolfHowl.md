@@ -25,8 +25,9 @@ at this point we are left to check only the search field, if we go to type `"'"`
 
 ![site](img/WolfHowl_error.png)
 
-excellent, we discovered a possible field where to perform a sql injection !
-at this point we do a basic injection and see what happens:
+excellent, we discovered a possible field where to perform a SQL injection! 
+at this point, we do a basic injection and see what happens:
+
 
 `"OR 1=1 --"`
 
