@@ -48,7 +48,7 @@ we get an error returned on the number of rows, this is because the two select (
 
 ![site](img/WolfHowl_select_enum_rows.png)
 
-perfect! now we can start gathering information about where the flag is storing, let's start by listing the database columns:
+perfect! now we can start gathering information about where the flag is stored, let's start by listing the database columns:
 
 `"UNION SELECT table_schema, table_name, column_name,4 FROM information_schema.columns -- "`
 
@@ -58,7 +58,7 @@ uh! in the employee table we have the columns email and password
 
 ![site](img/WolfHowl_list_tables2.png)
 
-at this point we have all the necessary information let's list the users
+Now we have all the necessary information; let's list the users
 
 `"UNION SELECT email,password,Title,4 FROM employee -- "`
 
